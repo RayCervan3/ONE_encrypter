@@ -1,0 +1,123 @@
+* {
+    font-family: "Inter", sans-serif;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 150%;
+}
+
+
+body {
+    background-color: #000;
+}
+
+.logo{
+    max-height: 100px;
+    margin: 10px 0 0 50px;
+}
+
+main {
+    display: flex;
+    margin-left: 80px;
+    margin-bottom: 50px;
+} 
+
+.input-texto {
+    border: none;
+    border-radius: 10px;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+    color: rgb(207, 207, 207);
+    background-color: #00000000;
+}
+
+.mensaje {
+    position: relative;
+    margin-top: 20px;
+    margin-left: 90px;
+    color: rgb(207, 207, 207);
+    border-color: rgb(207, 207, 207);
+    border-radius: 10px;
+    background-color: #00000000;
+    background-image: url("imagenes/search.gif");
+    background-repeat: no-repeat;
+    background-position: 18px;
+    background-size: 300px;
+    outline: none;
+    overflow: hidden;
+    resize: none;
+    -webkit-box-shadow: none;
+    -moz-box-shadow: none;
+    box-shadow: none;
+
+}
+
+.copiar {
+    position: relative;
+    margin-top: 90px;
+    margin-left: 205px;
+}
+
+.botones {
+    display: flex;
+    flex-direction: row;
+    margin-top: 20px;
+}
+
+.encriptar {
+    background-color: darkblue;
+    color:white;
+}
+
+.desencriptar {
+    margin-left: 30px;
+}
+
+.informacion {
+    font-size: 20px;
+    color: rgb(207, 207, 207);
+}
+
+/* border animation */
+
+.block {
+    margin-top: 40px;
+    position: relative;
+    background: linear-gradient(0deg, #000000, #272727);
+    border-radius: 10px;
+    
+  }
+  
+  .block:before, .block:after {
+    content: '';
+    position: absolute;
+    left: -2px;
+    top: -2px;
+    border-radius: 10px;
+    background: linear-gradient(45deg, #fb0094, #0000ff, #00ff00,#ffff00, #ff0000, #fb0094, 
+      #0000ff, #00ff00,#ffff00, #ff0000);
+    background-size: 400%;
+    width: calc(100% + 4px);
+    height: calc(100% + 4px);
+    z-index: -1;
+    animation: colorBorder 20s linear infinite;
+  }
+  
+  @keyframes colorBorder {
+    0% {
+      background-position: 0 0;
+    }
+    50% {
+      background-position: 150% 0;
+    }
+    100% {
+      background-position: 0 0;
+    }
+  }
+  
+  .block:after {
+    filter: blur(150px);
+  }
